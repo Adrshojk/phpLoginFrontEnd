@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="./style/style.css" />
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">Update Details</div>
+
+        <form id="form" class="form">
+            <div class="form-control">
+                <label for="age">age</label> <input required type="number" id="age" min='18' max='100' />
+                <img class='check' src="./style/svg/check.svg" alt="">
+                <img class='exclamation' src="./style/svg/exclamation.svg" alt="">
+                  <small>Error messege</small>
+            </div>
+              <div class="form-control">
+                <label for="dob">dob</label> <input required type="date" id="dob" />
+                <img class='check' src="./style/svg/check.svg" alt="">
+                <img class='exclamation' src="./style/svg/exclamation.svg" alt="">
+                  <small>Error messege</small>
+            </div>
+              <div class="form-control">
+                <label for="contact">contact</label> <input required type="text" id="contact" />
+                <img class='check' src="./style/svg/check.svg" alt="">
+                <img class='exclamation' src="./style/svg/exclamation.svg" alt="">
+                  <small>Error messege</small>
+            </div>
+    
+            <button type="submit">Update details</button>
+            <a href='/phplogin/index.html' >Logout</a>
+        </form>
+    </div>
+</body>
+<script src="profile.js"></script>
+</html>

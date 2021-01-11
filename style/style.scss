@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+$success:#2ecc71;
+$error:#e74c3c;
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body{
+    background-color: antiquewhite;
+    @include flexCenter();
+    min-height: 100vh;
+    
+}
+.container{
+    background-color: rgb(240, 226, 209);
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+    width: 400px !important;
+    overflow: hidden;
+    
+    .header{
+        padding: 10px;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .form{
+        padding:20px 10px;
+        .form-control{
+            margin-bottom: 10px;
+            padding-bottom: 20px;
+            position: relative;
+            label{
+                display: inline-block;
+                margin-bottom: 5px;
+                font-weight: bold;
+                text-transform: capitalize;
+            }
+            input{
+                display: block;
+                width: 100%;
+                border-radius: 5px;
+                padding:8px;
+                border: none;
+                border-bottom: 3px solid silver;
+                margin-bottom: 5px;
+                font-size: 14px;
+            }
+            img{
+                position: absolute;
+                top:45px;
+                right:15px;
+                visibility: hidden;
+            }
+            small{
+                position: absolute;
+                bottom: 0;
+                left:0;
+                visibility: hidden;
+                margin-left: 10px;
+                margin-bottom: 3px;
+            }
+            &.success{
+                input{
+                    border-color:$success;
+                }
+                img.check{
+                    visibility: visible;
+                }
+            }
+            &.error{
+                input{
+                    border-color:$error;
+                }
+                img.exclamation{
+                    visibility: visible;
+                }
+                small{
+                    visibility: visible;
+                    color: $error;
+
+                }
+            }
+        }
+        a{
+            display: inline-block;
+            text-align: center;
+            width: fit-content;
+            margin: 0 auto;
+        }
+    }
+    
+}
+button{
+    border: none;
+    border-radius: 10px;
+    padding:10px;
+    background-color: rgb(235, 91, 91);
+    color: wheat;
+    cursor:pointer;
+    display: block;
+    width: 100%;
+}

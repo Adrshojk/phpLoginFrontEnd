@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>register</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+        <div class="header">Create Account</div>
+
+        <form class="form" id='form'>
+          <div class="form-control">
+            <label for="name">Name</label> <input required type="text" id="name" />
+            <img class='check' src="./style/svg/check.svg" alt="">
+            <img class='exclamation' src="./style/svg/exclamation.svg" alt="">
+              <small>Error messege</small>
+        </div>
+          <div class="form-control">
+            <label for="email">email</label> <input required type="email" id="email" />
+            <img class='check' src="./style/svg/check.svg" alt="">
+            <img class='exclamation' src="./style/svg/exclamation.svg" alt="">
+              <small>Error messege</small>
+        </div>
+          <div class="form-control">
+            <label for="password">password</label> <input required type="password" id="password" />
+            <img class='check' src="./style/svg/check.svg" alt="">
+            <img class='exclamation' src="./style/svg/exclamation.svg" alt="">
+              <small>Error messege</small>
+        </div>
+          <div class="form-control">
+            <label for="cpassword">Confirm password</label> <input required type="password" id="cpassword" />
+            <img class='check' src="./style/svg/check.svg" alt="">
+            <img class='exclamation' src="./style/svg/exclamation.svg" alt="">
+              <small>Error messege</small>
+        </div>
+          
+          
+          <button>Sign Up</button>
+          <a href="./index.html">Login</a>
+        </form>
+    </div>
+  </body>
+  <script src="registration.js"></script>
+</html>
